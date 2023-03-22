@@ -7,18 +7,31 @@
   <title>First_Project</title>
   <link rel="stylesheet" href="/css/tailwind.css">
 </head>
-<body class="bg-gray-100 max-w-md mx-auto sm:bg-yellow-400 md:bg-green-300 lg:bg-pink-400 xl:bg-blue-500 2xl:bg-red-500">
-  <div class="px-8 py-12">
-    <img class="h-14 mx-auto" src="/img/images.png" alt="Work"/>
-    <img class="mt-6 rounded-lg shadow-xl" src="/img/work.jpg" alt="Employee working on a laptop"/>
-    <h1 class="mt-6 text-2xl font-black text-gray-900">
-      You can work from anywhere.<span class="text-green-500"> Take advantage of it.</span>
-    </h1>
-    <p class="mt-2 text-gray-600">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero sint quis sed placeat, deleniti incidunt quas quaerat, veritatis odio exercitationem itaque! Dolores hic nihil facere esse sapiente, at asperiores officia.
-    </p>
-    <div class="mt-4">
-      <a class="inline-block px-6 py-3 rounded-lg shadow-lg bg-green-500 text-white uppercase tracking-wider font-semibold text-sm" href="#">Sign Up for UpWork</a>
+<body class="bg-gray-300">
+  <div class="bg-gray-100 grid lg:grid-cols-2 2xl:grid-cols-3">
+    <div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:mx-7 2xl:col-span-1">
+      <img class="h-14 mx-auto" src="/img/images.png" alt="Work"/>
+      <img 
+        class="mt-6 rounded-lg shadow-xl sm:mt-8 sm:max-h-96 sm:w-full sm:object-cover object-center lg:hidden" 
+        src="/img/work.jpg" 
+        alt="Employee working on a laptop"
+        />
+      <h1 class="mt-6 text-2xl font-black text-gray-900 sm:mt-8 sm:text-4xl">
+        You can work from anywhere.
+        <br class="inline">
+        <span class="text-green-500">Take advantage of it.</span>
+      </h1>
+      <p class="mt-2 text-gray-600 sm:mt-4 sm:text-xl text-justify">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero sint quis sed placeat, deleniti incidunt quas quaerat, veritatis odio exercitationem itaque! Dolores hic nihil facere esse sapiente, at asperiores officia.
+      </p>
+      <div class="mt-4 sm:mt-6">
+        <a 
+        class="inline-block px-6 py-3 rounded-lg shadow-lg bg-green-500 text-white uppercase tracking-wider font-semibold text-sm  sm:text-base lg:px-36 lg:text-lg lg:mt-3 hover:bg-green-400 hover:-translate-y-0.5 transform transition focus:ring focus:ring-offset-2 focus:ring-green-500" 
+        href="#">Sign Up for UpWork</a>
+      </div>
+    </div>
+    <div class="hidden lg:block relative 2xl:col-span-2">
+      <img class="absolute inset-0 w-full h-full object-cover object-center" src="/img/work.jpg" alt="Employee working on a laptop"/>
     </div>
   </div>
 </body>
